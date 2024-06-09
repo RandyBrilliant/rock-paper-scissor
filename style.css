@@ -1,0 +1,140 @@
+:root {
+    --primary: #F4CE14;
+    --secondary: #495E57;
+    --neutral: #F5F7F8;
+    --dark: #45474B;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--dark);
+}
+
+main {
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    color: var(--neutral);
+}
+
+p {
+    font-size: 1rem;
+    color: var(--neutral);
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.game-btn {
+    font-size: 5rem;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    transition: scale 0.5s ease;
+}
+
+.game-btn:hover {
+    scale: 1.3;
+}
+
+.game-btn:active {
+    /* Make the color darker when the button is clicked */
+    filter: brightness(0.8);
+    scale: 1;
+}
+
+h2 {
+    font-size: 1.25rem;
+    color: var(--neutral);
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+/* Add border to the table */
+table, th, td {
+    border: 2px solid var(--secondary);
+}
+
+th {
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: var(--dark);
+    font-size: 0.75rem;
+}
+
+td {
+    padding: 10px 20px;
+    background-color: var(--neutral);
+    color: var(--dark);
+    font-size: 0.75rem;
+}
+
+.reset-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 0.75rem;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: var(--dark);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+}
+
+.reset-btn:hover {
+    background-color: var(--neutral);
+}
+
+.reset-btn:active {
+    filter: brightness(0.8);
+}
+
+
+.style-result {
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+
+.result {
+    margin-top: 50px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.5rem;
+}
+
+.author-link {
+    color: var(--neutral);
+}
+
+.author-link:hover {
+    color: var(--primary);
+}
+

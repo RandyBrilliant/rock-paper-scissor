@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <button class="reset-btn">Reset Progress</button>
+        <h1>Rock Paper Scissor Game</h1>
+        <p>Let's play Rock Paper Scissor Game and fight with computers!</p>
+        <section id="game">
+            <div class="btn-group">
+                <button class="game-btn" id="rock">✊</button>
+                <button class="game-btn" id="paper">🖐</button>
+                <button class="game-btn" id="scissor">✌</button>
+            </div>
+            <div class="result">
+                <h2>Game Result</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Player (<span id="player-result">0</span>)</th>
+                            <th>Computer (<span id="computer-result">0</span>)</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody id="game-result">
+                        <!-- <tr>
+                            <td>✊</td>
+                            <td>🖐</td>
+                            <td>Player Win</td>
+                        </tr> -->
+                        <tr id="no-result">
+                            <td colspan="3">No Results Found.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2020 <a class="author-link" href="https://www.instagram.com/RandyBrilliant">Randy Brilliant</a>, All Rights Reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

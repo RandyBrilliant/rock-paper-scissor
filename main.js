@@ -5,10 +5,12 @@ const computerScreen = document.getElementById('computer-result');
 const tableData = document.getElementById('game-result');
 const noResult = document.getElementById('no-result');
 const resetBtn = document.querySelector('.reset-btn');
+const buttonClickAudio = new Audio('button-press.mp3');
 
 let game = '';
 
 btn.addEventListener('click', function(e) {
+    buttonClickAudio.play();
     gameStarted(e.target.innerText);
 });
 
@@ -87,11 +89,11 @@ function addTable(result) {
     playerChoiceCell.innerText = getSymbolFromChoice(game[0]);
     computerChoiceCell.innerText = getSymbolFromChoice(game[1]);
     if (result === 'win') {
-        playerChoiceCell.style.fontSize = '1rem';
+        playerChoiceCell.style.fontSize = '1.2rem';
         resultCell.style.color = 'green';
     }
     if (result === 'lose') {
-        computerChoiceCell.style.fontSize = '1rem';
+        computerChoiceCell.style.fontSize = '1.2rem';
         resultCell.style.color = 'red';
     }
     resultCell.innerText = getResultText(result);

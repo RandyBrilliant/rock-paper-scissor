@@ -129,7 +129,11 @@ td {
 
 footer {
     width: 100%;
-    font-size: 0.3rem;
+
+}
+
+footer > p {
+    font-size: 0.5rem;
 }
 
 .author-link {
